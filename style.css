@@ -1,0 +1,265 @@
+/*gg fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    list-style: none;
+    text-decoration: none;
+}
+:root
+{
+    --main-color: #C11F2A;
+    --text--color: #9c8f87;
+    --bg--color: #fff;
+
+    --big--font: 4rem;
+    --h2--font: 2.24rem;
+    --p-font: 0.9rem;
+}
+body{
+    color: var(--text--color);
+    background: var(--bg--color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg--color);
+    padding: 10px 0 0 80px;
+    box-shadow: 0 0.5rem 50rem rgba(0,0,0,0.1);
+}
+img{
+    width: 100px;  
+    height: auto;  
+    display: block;  /* Đảm bảo logo hiển thị đúng cách */
+    margin: 0;
+}
+.logo div{
+    align-items: center;
+    display: inline-block;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 0px 20px;
+    color: var(--text--color);
+    font-weight: 500;
+}
+.navbar a:hover{
+    color: var(--text--color);
+}
+header::after{
+    display: table;
+    clear: both;
+    content: "";
+    /* width: 100%; */
+}
+.logo{
+    width: 20%;
+    float: left;
+}
+.nav{
+    width: 80%;
+    float: left;
+}
+
+
+/*Banner*/
+.banner {
+    width: 100%;
+    height: 100vh;
+    display:  flex;
+    align-items: center;
+    background-image: url('./img/brg1.png');  
+    background-size: cover;  /* Đảm bảo hình nền phủ đầy phần */
+    background-position: center;  /* Canh giữa hình nền */
+    
+    padding: 5% 0% 0 5%;
+}
+
+.banner-img img{
+    width: 100%;
+}
+.text {
+   
+    padding-left: 10px;
+    color:black;
+    margin: 8% -10% 15% -10%;
+}
+.home-img img{
+    width: 150%;
+    margin-left: 8%;
+}
+button{
+    width: 120px;
+    height: 40px;
+    background: #b09d92;
+    border: none;
+    border-radius: 15px; /* Bo tròn 15px */
+    margin: 2% ;
+}
+.btn{
+    margin-left: 10%;
+}
+.btn a button{
+    display: inline-block;
+}
+button:hover{
+    background: #9c8f87;
+}
+.banner::after{
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%;
+}
+.abc1{
+    width: 100%;
+    margin: 0 5% 0 4%;
+    float: left;
+}
+.abc2{
+    width: 120%;
+    float: left;
+    margin-left: 4%;
+}
+
+
+/*Sản phẩm thương hiêu*/
+.spthuonghieu{
+    width: auto;
+    height: 160vh;
+    display:  grid;
+    align-items: center;
+    background-image: url('./img/bgr2.png');  
+    background-size: cover;  /* Đảm bảo hình nền phủ đầy phần */
+    background-position: center;  /* Canh giữa hình nền */
+    padding: 0% 0 0 5%;  
+}
+.noibat h1{
+    color: #C11F2A;
+    padding: 20px;
+}
+.noibat p{
+    color: black;
+    margin-bottom: 20px;
+}
+.hanoicogi {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Đảm bảo các phần tử con sẽ bao lại khi không đủ không gian */
+    padding: 20px;
+}
+.noibat {
+    flex: 1;
+    min-width: 300px; /* Đảm bảo các phần tử có kích thước tối thiểu để không quá nhỏ trên màn hình nhỏ */
+    margin: 0 10% 2% 2%;
+    text-align: center; /* Canh giữa nội dung trong mỗi noibat */
+}
+.noibat img {
+    width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước của phần tử cha */
+    height: auto;
+}
+.noibat {
+    display: inline-block; /* Hiển thị trên cùng một dòng */
+    font-size: 16px; /* Đặt lại kích thước font */
+    max-width: 400px; /* Giới hạn độ rộng của đoạn văn */
+    padding-left: 10px;
+    margin-left: 2% ;
+    margin-top: 20px;
+}
+
+.spnoibat {
+    font-size: 0; /* Loại bỏ khoảng trắng giữa các div */
+}
+.sp {
+    display: inline-block;
+    vertical-align: top; /* Canh dọc ở đỉnh */
+    width: 30%; /* Phân chia ngang thành 3 phần bằng nhau */
+    margin: 0 1%; /* Khoảng cách giữa các sp */
+    font-size: 16px; /* Đặt lại kích thước font */
+    text-align: center; 
+    box-sizing: border-box; /* Đảm bảo padding và border không làm thay đổi kích thước của div */
+    padding: 0 10px; /* Thêm padding cho mỗi sp */
+}
+.sp p {
+    color: black;
+}
+.sp h3{
+    color: #9c8f87;
+    margin: 20px 0 20px 0;
+}
+.img-sp img{
+    width: 70%;
+    height: auto;
+    display: block; /* Đặt ảnh làm phần tử block */
+    margin-left: auto; /* Căn lề trái tự động */
+    margin-right: auto; /* Căn lề phải tự động */
+}
+
+
+/*lý do chọn*/
+.lydochon{
+    width: auto;
+    height: 100vh;
+    display:  grid;
+    align-items: center;
+    background-image: url('./img/bgr3.png');  
+    background-size: cover;  /* Đảm bảo hình nền phủ đầy phần */
+    background-position: center;  /* Canh giữa hình nền */
+    /* padding: 0% 0 0 5%;   */
+}
+
+
+
+
+
+
+/*footer*/
+footer{
+    background: #EFECEA;
+}
+.a{
+    font-size: 0; /* Loại bỏ khoảng trắng giữa các div */
+}
+.ft {
+    display: inline-block;
+    vertical-align: top; /* Canh dọc ở đỉnh */
+    width: 30%;
+    margin: 0 1%; /* Khoảng cách giữa các sp */
+    font-size: 16px; /* Đặt lại kích thước font */
+    box-sizing: border-box; /* Đảm bảo padding và border không làm thay đổi kích thước của div */
+    padding: 0 10px; /* Thêm padding cho mỗi sp */
+    margin-top: 2%;
+}
+.footer-lienhe h3,
+.social-media h3,
+.footer-chinhsach {
+    color: #9c8f87;
+    margin-bottom: 10px; 
+}
+.social-media{
+    margin-top: 2%;
+}
+.social-media a i {
+    font-size: 2.5em; /* Điều chỉnh kích thước icon theo nhu cầu của bạn */
+    margin-right: 10px; /* Tạo khoảng cách giữa các icon */
+    color: #9c8f87; /* Màu icon có thể tùy chỉnh theo nhu cầu */
+}
+
+.social-media a:last-child i {
+    margin-right: 0; /* Xóa khoảng cách cho icon cuối cùng */
+}
+
+
