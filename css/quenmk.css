@@ -155,3 +155,6 @@ nav ul li a{
     width: 100%;
     outline: none;
 }
+.container a:hover{
+    color: #333;
+}
