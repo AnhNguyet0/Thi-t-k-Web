@@ -483,8 +483,12 @@ footer .footer-info{
     color: #9c8f87;
     margin: 15px 0 20px; 
 }
+.footer-lienhe a{
+    color: #9c8f87;
+}
 .contact-link:hover,
-.footer-lienhe p:hover{
+.footer-lienhe p:hover,
+.footer-lienhe a:hover{
     color: #C11F2A;
 }
 .social-media{
