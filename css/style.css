@@ -314,7 +314,7 @@ button:hover {
 
 /* Đánh giá */
 .container{
-    height: 90vh;
+    height: auto;
     width: 100%;
     display: flex;
     align-items: center;
