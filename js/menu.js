@@ -121,3 +121,29 @@ btnGui.addEventListener('click', function() {
     sdtInput.value = '';
   }
 });
+
+// Hiển thị nút khi cuộn xuống 20px từ đỉnh trang
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    const backToTopBtn = document.getElementById("backToTopBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopBtn.style.display = "flex";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+}
+
+// Cuộn lên đầu trang khi nhấn nút
+document.getElementById("backToTopBtn").onclick = function() {
+    scrollToTop();
+};
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
