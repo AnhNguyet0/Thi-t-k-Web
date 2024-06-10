@@ -475,3 +475,30 @@ button:hover {
         transform: none;
     }
 }
+
+/* Backtop */
+#backToTopBtn {
+    display: none; /* Ẩn nút mặc định */
+    position: fixed; /* Cố định nút ở một vị trí cố định */
+    bottom: 20px; /* Cách đáy 20px */
+    right: 20px; /* Cách phải 20px */
+    z-index: 100; /* Đảm bảo nút nằm trên các phần tử khác */
+    background-color: #b09d92; /* Màu nền */
+    color: white; /* Màu chữ */
+    border: none; /* Không viền */
+    padding: 15px; /* Khoảng cách bên trong */
+    border-radius: 50%; /* Bo tròn */
+    cursor: pointer; /* Thay đổi con trỏ khi hover */
+    transition: opacity 0.3s; /* Hiệu ứng mờ dần */
+    font-size: 24px; /* Kích thước font cho biểu tượng */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#backToTopBtn:hover {
+    background-color: #9c8f87; /* Màu nền khi hover */
+}
+html {
+    scroll-behavior: smooth;
+}
