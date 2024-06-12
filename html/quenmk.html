@@ -27,20 +27,22 @@
     <div class="container" id="container">
         <form>
             <h1>Bạn quên mật khẩu?</h1>
-                <span>Hãy nhập tài khoản email bạn sử dụng để chúng tôi có thể cấp lại mật khẩu.</span>
-                <input type="email" id="emailInput" placeholder="Email">
-                <a href="../html/dangnhap.html" class="button" id="submitButton">Gửi lại mật khẩu</a>
-            </form>
-        </div>
+            <span>Hãy nhập tài khoản email bạn sử dụng để chúng tôi có thể cấp lại mật khẩu.</span>
+            <input type="email" id="emailInput" placeholder="Email">
+            <a href="../html/dangnhap.html" class="button" id="submitButton">Gửi lại mật khẩu</a>
+        </form>
     </div>
     
     <script>
         document.getElementById('submitButton').addEventListener('click', function(event) {
-        var emailInput = document.getElementById('emailInput').value;
-        if (emailInput === '') {
-        event.preventDefault();  // Ngăn chặn chuyển hướng liên kết
-        alert('Vui lòng nhập email của bạn.');
-        }
+            event.preventDefault(); // Prevent the default anchor behavior
+            var email = document.getElementById('emailInput').value;
+            if (email) {
+                alert('Kiểm tra email của bạn để xem mật khẩu.');
+                window.location.href = "../html/dangnhap.html";
+            } else {
+                alert('Vui lòng nhập địa chỉ email hợp lệ.');
+            }
         });
     </script>
 
