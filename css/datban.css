@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 1000; /* Đảm bảo thanh nav nằm trên các phần tử khác */
+    background: #fff;
+}
+nav .logo{
+    padding: 0 50px;
+    width: auto;
+    height: 70px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #9c8f87;
+    font-size: 17px;
+    padding: 7px 13px;
+}
+nav ul li i{
+    color: #9c8f87;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F0F0; /* Light gray background */
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff; /* White container background */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px; /* Larger font size for heading */
+    color: #333; /* Darker text color */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Spacing between form elements */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Bold font for labels */
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px; /* Rounded corners for form elements */
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button {
+    background-color: #4CAF50; /* Green button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold; /* Bold font for button text */
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+  
+
+footer{
+    background: #EFECEA;
+}
+footer .imgft{
+    width: auto;
+    height: 70px;
+}
+footer .footer-info{
+    display: flex;         
+    justify-content: center; 
+    align-items: center;   
+    padding: 50px 10px 10px 10px;          
+    /* transition: opacity 1s ease, transform 1s ease;
+    opacity: 0;
+    transform: translateY(20px); */
+}
+.a{
+    font-size: 0; /* Loại bỏ khoảng trắng giữa các div */
+    /* transition: opacity 1s ease, transform 1s ease;
+    opacity: 0;
+    transform: translateY(20px); */
+}
+.ft {
+    display: inline-block;
+    vertical-align: top; /* Canh dọc ở đỉnh */
+    width: 33%;
+    font-size: 16px; /* Đặt lại kích thước font */
+    box-sizing: border-box; /* Đảm bảo padding và border không làm thay đổi kích thước của div */
+    padding-top: 15px;
+}
+  
+.footer-lienhe h3, .social-media h3{
+    color: #9c8f87;
+    margin: 15px 0 20px; 
+}
+.footer-lienhe a{
+    color: #9c8f87;
+}
