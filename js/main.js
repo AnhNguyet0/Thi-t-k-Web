@@ -47,6 +47,28 @@ document.addEventListener("DOMContentLoaded", function() {
       observer.observe(target);
   });
 });
+//thương hiệu
+document.addEventListener("DOMContentLoaded", function() {
+    var threshold = 0.5; // Ngưỡng hiển thị
+    var options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: threshold
+    };
+  
+    var observer = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting && entry.intersectionRatio >= threshold) {
+                entry.target.classList.add("show");
+            }
+        });
+    }, options);
+  
+    var targets = document.querySelectorAll('.chungnhanaaa');
+    targets.forEach(function(target) {
+        observer.observe(target);
+    });
+  });
 
 //đánh giá
 document.addEventListener("DOMContentLoaded", function() {
@@ -186,3 +208,99 @@ function scrollToTop() {
         behavior: 'smooth'
     });
 }
+
+// This script will handle form submission and other interactions
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector("form");
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Thông tin của bạn đã được gửi thành công!");
+        form.reset();
+    });
+});
+
+
+
+
+
+// Get the promotion images
+var promotionImages = document.getElementsByClassName("promotion-image");
+var popup = document.getElementById("popup");
+
+// Set the first image as active
+promotionImages[0].classList.add("active");
+
+// Set the index of the current active image
+var currentIndex = 0;
+
+// Function to change the active image
+function changeImage() {
+    // Remove active class from the current image
+    promotionImages[currentIndex].classList.remove("active");
+
+    // Increment the index, wrapping around to 0 if necessary
+    currentIndex = (currentIndex + 1) % promotionImages.length;
+
+    // Add active class to the new active image
+    promotionImages[currentIndex].classList.add("active");
+}
+
+// Change the image every 3 seconds
+setInterval(changeImage, 3000);
+
+// Show the popup after 5 seconds when the page loads
+window.onload = function() {
+    setTimeout(function() {
+        popup.style.display = "block";
+    }, 5000); // 5000 milliseconds = 5 seconds
+}
+
+// Close the popup when the user clicks outside of it
+window.onclick = function(event) {
+    if (event.target == popup) {
+        popup.style.display = "none";
+    }
+}
+
+
+
+
+
+
+//livechat
+document.addEventListener("DOMContentLoaded", function () {
+    var livechat = document.getElementById("livechat");
+    var chatPopup = document.getElementById("chatPopup");
+    var closeChat = document.getElementById("closeChat");
+    var sendChat = document.getElementById("sendChat");
+    var chatInput = document.getElementById("chatInput");
+    var chatBody = document.getElementById("chatBody");
+
+    livechat.addEventListener("click", function () {
+        chatPopup.style.display = "block";
+    });
+
+    closeChat.addEventListener("click", function () {
+        chatPopup.style.display = "none";
+    });
+
+    sendChat.addEventListener("click", function () {
+        var message = chatInput.value;
+        if (message.trim()) {
+            var messageElement = document.createElement("div");
+            messageElement.textContent = message;
+            messageElement.className = "chat-message";
+            chatBody.appendChild(messageElement);
+            chatInput.value = "";
+            chatBody.scrollTop = chatBody.scrollHeight;
+        }
+    });
+
+    chatInput.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+            sendChat.click();
+        }
+    });
+});
+
+
