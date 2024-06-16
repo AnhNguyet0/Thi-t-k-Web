@@ -9,7 +9,7 @@
 :root
 {
     --main-color: #C11F2A;
-    --text--color: #9c8f87;
+    --text--color: #333;
     --bg--color: #fff;
 
     --big--font: 4rem;
@@ -44,12 +44,12 @@ nav ul li{
     margin: 0 5px;
 }
 nav ul li a{
-    color: #9c8f87;
+    color: #333;
     font-size: 17px;
     padding: 7px 13px;
 }
 nav ul li i{
-    color: #9c8f87;
+    color: #333;
 }
 a:hover{
     color: #C11F2A;
@@ -354,11 +354,11 @@ footer .footer-info{
 }
   
 .footer-lienhe h3, .social-media h3{
-    color: #9c8f87;
+    color: #333;
     margin: 15px 0 20px; 
 }
 .footer-lienhe a{
-    color: #9c8f87;
+    color: #333;
 }
 .contact-link:hover,
 .footer-lienhe p:hover,

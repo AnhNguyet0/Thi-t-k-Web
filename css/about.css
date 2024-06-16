@@ -9,7 +9,7 @@
 :root
 {
     --main-color: #C11F2A;
-    --text--color: #9c8f87;
+    --text--color: #333;
     --bg--color: #fff;
 
     --big--font: 4rem;
@@ -44,12 +44,12 @@ nav ul li{
     margin: 0 5px;
 }
 nav ul li a{
-    color: #9c8f87;
+    color: #333;
     font-size: 17px;
     padding: 7px 13px;
 }
 nav ul li i{
-    color: #9c8f87;
+    color: #333;
 }
 nav ul li i:hover{
     color: #C11F2A;
@@ -125,8 +125,7 @@ a:hover{
 .about1 img{
     height: 500px;
     width: auto;
-    border-top-left-radius: 200px; /* Bo góc trên bên trái */
-    border-top-right-radius: 200px; /* Bo góc trên bên phải */
+    border-radius: 50px; /* Bo góc trên bên trái */
 }
 .about1 .text{
     padding-right: 8%;
@@ -152,6 +151,7 @@ a:hover{
         border-top-left-radius: 70px; /* Bo góc trên bên trái */
         border-top-right-radius: 70px; /* Bo góc trên bên phải */
     }
+    
 }
 
 .about2{
@@ -169,6 +169,7 @@ a:hover{
     height: 250px;
     width: auto;
     object-fit: cover;
+    border-radius: 50px;
 }
 .about2 .text2 {
     flex: 1;
@@ -225,11 +226,11 @@ footer .footer-info{
 }
   
 .footer-lienhe h3, .social-media h3{
-    color: #9c8f87;
+    color: #333;
     margin: 15px 0 20px; 
 }
 .footer-lienhe a{
-    color: #9c8f87;
+    color: #333;
 }
 .contact-link:hover,
 .footer-lienhe p:hover,
