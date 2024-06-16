@@ -10,7 +10,7 @@
 :root
 {
     --main-color: #C11F2A;
-    --text--color: #9c8f87;
+    --text--color: #333;
     --bg--color: #fff;
 
     --big--font: 4rem;
@@ -45,7 +45,7 @@ nav ul li{
     margin: 0 5px;
 }
 nav ul li a{
-    color: #9c8f87;
+    color: #333;
     font-size: 17px;
     padding: 7px 13px;
 }
@@ -482,11 +482,11 @@ footer .footer-info{
 }
   
 .footer-lienhe h3, .social-media h3{
-    color: #9c8f87;
+    color: #333;
     margin: 15px 0 20px; 
 }
 .footer-lienhe a{
-    color: #9c8f87;
+    color: #333;
 }
 .contact-link:hover,
 .footer-lienhe p:hover,
@@ -561,6 +561,184 @@ footer .footer-info{
 html {
     scroll-behavior: smooth;
 }
+
+
+/* pop_up */
+.popup {
+    display: none;
+    position:fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.promotion-images {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.promotion-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.promotion-image.active {
+    opacity: 1;
+    
+}
+
+/* live chat */
+.livechat {
+    display: none; /* Ẩn nút mặc định */
+    position: fixed; /* Cố định nút ở một vị trí cố định */
+    bottom: 100px; /* Cách đáy 20px */
+    right: 20px; /* Cách phải 20px */
+    z-index: 100; /* Đảm bảo nút nằm trên các phần tử khác */
+    background-color: #b09d92; /* Màu nền */
+    color: white; /* Màu chữ */
+    border: none; /* Không viền */
+    padding: 15px; /* Khoảng cách bên trong */
+    border-radius: 50%; /* Bo tròn */
+    cursor: pointer; /* Thay đổi con trỏ khi hover */
+    transition: opacity 0.3s; /* Hiệu ứng mờ dần */
+    font-size: 24px; /* Kích thước font cho biểu tượng */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    width: 300px;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: white;
+    z-index: 1000;
+}
+
+.chat-header {
+    background-color: #b09d92;
+    color: white;
+    padding-left: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-body {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.chat-footer {
+    display: flex;
+    padding: 10px 0 10px 10px;
+    border-top: 1px solid #ddd;
+}
+
+.chat-footer input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+
+.chat-footer button {
+    padding: 5px 10px;
+    background-color: #b09d92;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.close-btn {
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding-right: 2%;
+}
+.chat-popup button{
+    width: auto;
+    transition: none;
+    opacity: 1;
+    transform: none;
+}
+
+/* Chứng nhận */
+.chungnhanaaa{
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    transition: opacity 1s ease, transform 1s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.chungnhan {
+    display: flex; /* Sử dụng flexbox cho .chungnhan */
+    justify-content: center; /* Căn giữa nội dung bên trong */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 20px; /* Khoảng cách giữa các ảnh */
+    margin: 2% 8% 2% 8%;
+}
+
+.cn {
+    flex: 0 1 auto; /* Đảm bảo các div .cn không giãn nở quá mức */
+}
+
+.cn img {
+    max-width: 100%; /* Đảm bảo ảnh không vượt quá kích thước của div cha */
+    width: 330px;
+    height: auto;
+    border-radius: 15px;
+}
+.chungnhanaaa.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+  
 
 
 
