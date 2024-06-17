@@ -639,6 +639,9 @@ html {
     justify-content: center;
     align-items: center;
 }
+.livechat:hover{
+    background-color: #9c8f87;
+}
 
 .chat-popup {
     display: none;
