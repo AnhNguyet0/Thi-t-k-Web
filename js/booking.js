@@ -39,22 +39,8 @@ form.addEventListener('submit', function(event) {
         isValid = false;
     }
 
-    if (isValid) {
-        // Xử lý dữ liệu và gửi đến máy chủ
-
-        const data = {
-            name: nameInput.value,
-            phone: phoneInput.value,
-            numPeople: numPeopleInput.value,
-            date: dateInput.value,
-            time: timeInput.value,
-            specialRequest: specialRequestInput.value,
-            table: tableSelect.value,
-        };
-
-        // Gửi dữ liệu đến máy chủ bằng AJAX hoặc fetch API
-        // ...
+    
 
         alert('Đặt bàn thành công!');
-    }
+
 });
